@@ -9,13 +9,16 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -35,6 +38,30 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  align-self: center;
+  inline-size: 1140px;
+}
+
+.search-form {
+  display: flex;
+  gap: 40px;
+}
+
+.content__list {
+  position: relative;
+  block-size: 298px;
+  overflow: auto;
+}
+
+.content__details {
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 /* Кастомный скроллбар */
