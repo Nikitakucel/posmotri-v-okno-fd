@@ -48,9 +48,28 @@ ol {
   inline-size: 1140px;
 }
 
+.result__video-container {
+  position: relative;
+  inline-size: 711px;
+  block-size: 386px;
+  margin-block-end: 16px;
+}
+
+.result__video {
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
 .search-form {
   display: flex;
   gap: 40px;
+}
+
+.content__details {
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .content__list {
@@ -59,9 +78,19 @@ ol {
   overflow: auto;
 }
 
-.content__details {
-  block-size: 100%;
-  inline-size: 100%;
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  padding: 3px 0 0 2px;
+}
+
+.content__video-card-thumbnail {
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Кастомный скроллбар */
