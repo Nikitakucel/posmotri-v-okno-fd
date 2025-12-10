@@ -205,6 +205,7 @@ ol {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  gap: 30px;
 }
 
 .content__card-link {
@@ -218,7 +219,7 @@ ol {
   align-items: flex-start;
 }
 
-.content__list-item:not(:last-child) {
+.content__list-item:last-child {
   margin-block-end: 30px;
 }
 
@@ -278,7 +279,8 @@ ol {
   background: #545050;
 }
 
-.content__card-link:active {
+.content__card-link:active,
+.content__card-link_current {
   background: #545050;
 }
 
@@ -298,7 +300,8 @@ ol {
   outline: none;
 }
 
-.search-form__textfield:focus-visible {
+.search-form__textfield:focus-visible,
+.search-form__checkbox:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 3px;
 }
@@ -313,6 +316,6 @@ ol {
   outline-offset: 1px;
 }
 
-.content__card-link:focus-visible {
+.content__video-card:focus-visible {
   outline: 1px solid #fff;
 }
